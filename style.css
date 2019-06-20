@@ -1,0 +1,146 @@
+.background {
+  fill: rgb(61, 65, 71);
+  pointer-events: all;
+}
+
+body{
+  background-color: rgb(61, 65, 71);
+}
+
+#ControlCenter text{
+  fill: white;
+}
+
+.loader {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+}
+.loader:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255) transparent rgb(255, 255, 255) transparent;
+  animation: loader 1.2s infinite;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+#map .mapLegend text{
+  fill: white
+}
+
+.feature {
+  /*fill: #ccc;*/
+
+  cursor: pointer;
+}
+
+#map path {
+  stroke: #fff;
+  stroke-width: 1;
+}
+/*
+.feature.active {
+  opacity: 0.5;
+}
+*/
+.mesh {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tooltipContainer {
+  display: none;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow-x: visible;
+  overflow-y: visible;
+  background-color: black;
+  min-height: 45px;
+  min-width: 100px;
+  /*transition: 0.1s;*/
+}
+
+.tooltipMapText {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 10px;
+  line-height: 20%;
+}
+
+.parallelAxisGraph text {
+  fill: white;
+  font-family: sans-serif;
+}
+
+.parallelAxisGraph {
+  fill: none;
+  stroke: rgb(255, 255, 255);
+  stroke-opacity: 0.1;
+}
+
+.currentSelected {
+  stroke: rgb(238, 255, 0);
+  stroke-opacity: 1;
+}
+
+.parallelAxisGraph path {
+  fill: none;
+  /*
+  stroke: rgb(197, 197, 197);
+  stroke-opacity: 0.1;
+  */
+}
+
+.parallelAxisGraph .axis .domain .tick {
+  fill: white;
+}
+
+.clearerBackground {
+  stroke: none;
+  fill-opacity: 0.5;
+  fill: black;
+}
+
+.currentTitle {
+  
+  font-family: sans-serif;
+  font-size: 50;
+  stroke-opacity: 1;
+  fill: white;
+}
+
+.rightBackground {
+  fill: rgb(36, 39, 43);
+  opacity: 0.3;
+}
+
+.mapLegendText {
+  font-size: 5;
+}
+
